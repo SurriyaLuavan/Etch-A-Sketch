@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid;
+    display: flex;
+    gap: 10px;
+    width: 600px;
+    height: 600px;
+    justify-content: space-evenly;
+}
