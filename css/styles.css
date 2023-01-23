@@ -77,8 +77,8 @@ footer {
     border: 5px solid #583101;
     display: flex;
     gap: 2px;
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
     justify-content: space-evenly;
     border-radius: 10px;
 }
