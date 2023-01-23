@@ -6,6 +6,13 @@
 
 body {
     background-color: #ffedd8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-container {
+    flex: 1;
 }
 
 header, footer {
@@ -13,35 +20,59 @@ header, footer {
     background-color: #583101;
     text-align: center;
     color: white;
+    font-size: x-large;
 }
 
-.grid-size {
-    padding: 7px;
-    font-size: 15px;
+footer {
+    padding: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto 25px;
+    gap: 25px;
+}
+
+.grid-size, .eraser, .sketch, .reset{
+    padding: 15px;
+    font-size: 20px;
     font-weight: bold;
     background-color: #bb9457;
     display: block;
-    border: dbb9457 solid 2px;
+    border: solid 3px black;
     border-radius: 5px;
-    margin: 50px auto;
     color: white;
+    flex: 0 1 130px;
 }
 
-.grid-size:hover {
-    transform: scale(1.2);
-    
+.grid-size:hover, .eraser:hover, .sketch:hover, .reset:hover {
+    transform: scale(1.1);
+}
+
+.reset {
+    background-color: orange;
+    color: black;
+}
+
+.reset-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .container {
     background-color: white;
-    margin: 50px auto 150px;
-    padding: 40px;
-    border: 2px solid;
+    margin: 25px auto;
+    padding: 5px;
+    border: 5px solid #583101;
     display: flex;
-    gap: 10px;
+    gap: 2px;
     width: 800px;
     height: 800px;
     justify-content: space-evenly;
+    border-radius: 10px;
 }
 
 .pixelHover {
