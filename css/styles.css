@@ -8,10 +8,14 @@ body {
     background-color: #ffedd8;
     display: flex;
     flex-direction: column;
-    height: 100vmin;
+    height: 100vh;
 }
 
 .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
     flex: 1;
 }
 
@@ -20,7 +24,7 @@ header, footer {
     background-color: #583101;
     text-align: center;
     color: white;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 footer {
@@ -29,10 +33,12 @@ footer {
 
 .options {
     display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 50px auto 25px;
-    gap: 25px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 40px;
+    height: 40%;
 }
 
 .grid-size, .eraser, .sketch, .reset{
@@ -44,7 +50,7 @@ footer {
     border: solid 3px black;
     border-radius: 5px;
     color: white;
-    flex: 0 1 130px;
+    flex: 0 1 0px;
 }
 
 .grid-size:hover, .eraser:hover, .sketch:hover, .reset:hover {
@@ -52,6 +58,7 @@ footer {
 }
 
 .reset {
+    margin-top: auto;
     background-color: orange;
     color: black;
 }
@@ -63,8 +70,9 @@ footer {
 }
 
 .container {
+    flex: 0 0 800px;
     background-color: white;
-    margin: 25px auto;
+    margin: 25px 0px;
     padding: 5px;
     border: 5px solid #583101;
     display: flex;
