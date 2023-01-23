@@ -4,13 +4,46 @@
     padding: 0;
 }
 
-.container {
-    margin: 50px auto;
+body {
+    background-color: #ffedd8;
+}
+
+header, footer {
     padding: 20px;
+    background-color: #583101;
+    text-align: center;
+    color: white;
+}
+
+.grid-size {
+    padding: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #bb9457;
+    display: block;
+    border: dbb9457 solid 2px;
+    border-radius: 5px;
+    margin: 50px auto;
+    color: white;
+}
+
+.grid-size:hover {
+    transform: scale(1.2);
+    
+}
+
+.container {
+    background-color: white;
+    margin: 50px auto 150px;
+    padding: 40px;
     border: 2px solid;
     display: flex;
     gap: 10px;
     width: 600px;
     height: 600px;
     justify-content: space-evenly;
+}
+
+.pixelHover {
+    background-color: aqua;
 }
