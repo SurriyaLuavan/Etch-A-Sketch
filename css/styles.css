@@ -8,7 +8,7 @@ body {
     background-color: #ffedd8;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100vmin;
 }
 
 .flex-container {
